@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body { 
+    margin: 0;
+    background-color: #f5f8fa;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #1da1f2;
+    padding: 15px 20px;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+.profile-pic {
+    width: 48px;
+    height: 48px;
+    background-color: #ccc;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.tweet-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.tweet-input {
+    flex: 1;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccd6dd;
+    resize: none;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.tweet-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #657786;
+}
+
+button {
+    background-color: #1da1f2;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0d8ddb;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button:disabled {
+    background-color: #aab8c2;
+    cursor: not-allowed;
+}
+
+.tweet {
+    display: flex;
+    gap: 15px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+.tweet-header {
+    display: flex;
+    gap: 8px;
+    font-size: 14px;
+    color: #657786;
+}
+
+.tweet-header strong {
+    color: black;
+}
+
+.tweet-content p {
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+.tweet-icons {
+    display: flex;
+    gap: 25px;
+    color: #657786;
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+@media (max-width: 600px) {
+    .tweet-box,
+    .tweet {
+        flex-direction: column;
+    }
+
+    .tweet-actions {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+}
